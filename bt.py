@@ -11,7 +11,7 @@ def promtFunc(system, prompt):
     headers = {
     'Content-Type': 'application/json',
     #my individual api-key
-    'X-API-KEY': 'b9c24ff8-b2ef-4f06-b432-a26372279922'
+    'X-API-KEY': 'your-key'
     }
     conn.request("POST", "/api/v1/prompt", payload, headers)
     res = conn.getresponse()
