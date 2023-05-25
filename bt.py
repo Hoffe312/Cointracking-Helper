@@ -11,7 +11,7 @@ def promtFunc(system, prompt):
     headers = {
     'Content-Type': 'application/json',
     #my individual api-key
-    'X-API-KEY': 'your-key'
+    'X-API-KEY': 'b9c24ff8-b2ef-4f06-b432-a26372279922'
     }
     conn.request("POST", "/api/v1/prompt", payload, headers)
     res = conn.getresponse()
@@ -35,7 +35,7 @@ def main():
         system_choice = int(input(f"System(Wähle eine Nummer):"))
         system = system_inputs[system_choice]
         print(f"System = {system}")
-        prompt = input("Prompt:")
+        prompt = input("Prompt: ")
         print("")
         #needs two variables, system = rough setting of the prompt, prompt = actual question
         promtFunc(system,prompt)
